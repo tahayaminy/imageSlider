@@ -157,23 +157,23 @@
       "
     ></section>
     <section id="btns">
-      <label onclick="pos(this)" class="container">
+      <label onclick="pos(0)" class="container">
         <input type="radio" checked="checked" name="radio" />
         <span class="checkmark"></span>
       </label>
-      <label onclick="pos(this)" class="container">
+      <label onclick="pos(1)" class="container">
         <input type="radio" name="radio" checked/>
         <span class="checkmark"></span>
       </label>
-      <label onclick="pos(this)" class="container">
+      <label onclick="pos(2)" class="container">
         <input type="radio" name="radio" />
         <span class="checkmark"></span>
       </label>
-      <label onclick="pos(this)" class="container">
+      <label onclick="pos(3)" class="container">
         <input type="radio" name="radio" />
         <span class="checkmark"></span>
       </label>
-      <label onclick="pos(this)" class="container">
+      <label onclick="pos(4)" class="container">
         <input type="radio" name="radio" />
         <span class="checkmark"></span>
       </label>
@@ -217,6 +217,17 @@
         stage.nextElementSibling.style.backgroundImage =
           "url(" + bgSrc[next] + ")";
       }
+    }
+    function pos(prm){
+      var next;
+      var prev;
+      next=(prm + 1) > 4 ? 0 : prm+1;
+      prev=(prm - 1) < 0 ? 4 : prm-1;
+      stage.style.backgroundImage = "url(" + bgSrc[prm] + ")";
+        stage.previousElementSibling.style.backgroundImage =
+          "url(" + bgSrc[prev] + ")";
+        stage.nextElementSibling.style.backgroundImage =
+          "url(" + bgSrc[next] + ")";
     }
   </script>
 </html>
