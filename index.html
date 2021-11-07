@@ -224,6 +224,7 @@
       next=(prm + 1) > 4 ? 0 : prm+1;
       prev=(prm - 1) < 0 ? 4 : prm-1;
       stage.style.backgroundImage = "url(" + bgSrc[prm] + ")";
+      i=prm;
         stage.previousElementSibling.style.backgroundImage =
           "url(" + bgSrc[prev] + ")";
         stage.nextElementSibling.style.backgroundImage =
