@@ -3,44 +3,17 @@
     padding: 0;
   }
   body,
-  html {
+  html,.imageSlider {
     height: 100%;
     width: 100%;
   }
-  body {
+  .imageSlider {
     background-color: #293241;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #btns {
-    position: absolute;
-    left: 0;
-    bottom: 10%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-  }
-  #btns > div {
-    background-color: #3d5a80;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    margin: 1%;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  #btns > div > div {
-    background-color: #98c1d9;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-  }
+  
   .contimg {
     display: inline-block;
     margin: 1%;
@@ -69,6 +42,36 @@
     width: 400px;
     height: 300px;
     z-index: 2;
+  }
+
+
+  #btns {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  #btns > div {
+    background-color: #3d5a80;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #btns > div > div {
+    background-color: #98c1d9;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
   }
   /* The container */
   .container {
