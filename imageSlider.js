@@ -6,9 +6,6 @@ var bgSrc = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
 
     function show(prm, el) {
       var tst = document.getElementsByClassName("contimg");
-      for (var x = 0; x < tst.length; x++) {
-        tst[x].style.opacity = "0";
-      }
       var next;
       var prev;
       if (prm == 0) {

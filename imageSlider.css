@@ -21,10 +21,6 @@
     border-radius: 5px;
     background-position: center;
     cursor: pointer;
-    transition: 0.2s;
-    animation-name: tst;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
   }
   @keyframes tst {
     0% {
@@ -78,7 +74,7 @@
     display: block;
     position: relative;
     cursor: pointer;
-    margin: 3%;
+    margin: 13px;
   }
 
   /* Hide the browser's default radio button */
